@@ -36,23 +36,20 @@
     .carta-container {
       perspective: 1000px;
       z-index: 1;
-      width: 100%;
       padding: 20px;
-      box-sizing: border-box;
     }
 
     .carta {
-      max-width: 400px;
-      width: 100%;
+      width: 90%;
+      max-width: 300px;
       background: #fff5f8;
-      padding: 30px;
+      padding: 25px;
       border-radius: 20px;
       box-shadow: 0 20px 40px rgba(0,0,0,0.3);
       transform-style: preserve-3d;
       transform: rotateY(90deg);
       animation: giroCarta 1.2s ease-out forwards;
-      text-align: center;
-      box-sizing: border-box;
+      text-align: justify;
     }
 
     @keyframes giroCarta {
@@ -64,12 +61,13 @@
     .carta h2 {
       color: #e91e63;
       margin-bottom: 10px;
-      font-size: 2em;
+      font-size: 1.8em;
+      text-align: center;
     }
 
     .carta p {
       color: #333;
-      font-size: 1.15em;
+      font-size: 1.05em;
       line-height: 1.6;
     }
 
@@ -90,26 +88,6 @@
       transform: scale(1.08);
       box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     }
-
-    /* 🌐 Estilos para pantallas pequeñas */
-    @media (max-width: 480px) {
-      .carta {
-        padding: 20px;
-      }
-
-      .carta h2 {
-        font-size: 1.6em;
-      }
-
-      .carta p {
-        font-size: 1em;
-      }
-
-      .boton {
-        font-size: 0.95em;
-        padding: 10px 20px;
-      }
-    }
   </style>
 </head>
 <body>
@@ -119,9 +97,11 @@
   <div class="carta-container">
     <div class="carta">
       <p>
-       Sé que estás con dudas, pero ¿recuerdas una de mis filosofías sobre "las oportunidades que se presentan"?<br><br>
-       Tú fuiste una oportunidad en mi vida, conocerte fue algo muy especial. No me gustaría perder esta oportunidad.<br><br>
-       Sé que tienes miedo a lastimarte, yo también... Pero cuando te hablé de mis sentimientos, te dije que no todo sería color de rosa. Y eso lo hace más especial: cómo enfrentamos los tropiezos. Ya superamos uno, sé que podemos superar este también.
+        Sé que estás con dudas, pero ¿te acuerdas de una de mis filosofías de vida sobre "las oportunidades que se presentan"?
+        Tú fuiste una oportunidad en mi vida. Conocerte fue algo muy especial, y no me gustaría perder esta oportunidad.
+        Sé que tienes miedo de lastimarte, yo también lo tengo, pero recuerda cuando te hablé de mis sentimientos:
+        que no todo sería color de rosa. Y eso lo hace más especial, porque enfrentamos juntos cada tropiezo.
+        Ya superamos uno la vez anterior, y sé que también podemos con este.
       </p>
     </div>
   </div>
