@@ -18,14 +18,13 @@
       position: relative;
     }
 
-    /* Estrellas suaves de fondo */
     .sparkle {
       position: absolute;
       width: 100%;
       height: 100%;
       background-image: radial-gradient(white 1px, transparent 1px);
       background-size: 20px 20px;
-      animation: twinkle 0.5s infinite linear; /* ← Aquí lo aceleras */
+      animation: twinkle 0.5s infinite linear;
       z-index: 0;
     }
 
@@ -34,14 +33,17 @@
       100% { background-position: 20px 20px; }
     }
 
-    /* Contenedor 3D */
     .carta-container {
       perspective: 1000px;
       z-index: 1;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
     }
 
     .carta {
-      width: 400px;
+      max-width: 400px;
+      width: 100%;
       background: #fff5f8;
       padding: 30px;
       border-radius: 20px;
@@ -50,6 +52,7 @@
       transform: rotateY(90deg);
       animation: giroCarta 1.2s ease-out forwards;
       text-align: center;
+      box-sizing: border-box;
     }
 
     @keyframes giroCarta {
@@ -87,6 +90,26 @@
       transform: scale(1.08);
       box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     }
+
+    /* 🌐 Estilos para pantallas pequeñas */
+    @media (max-width: 480px) {
+      .carta {
+        padding: 20px;
+      }
+
+      .carta h2 {
+        font-size: 1.6em;
+      }
+
+      .carta p {
+        font-size: 1em;
+      }
+
+      .boton {
+        font-size: 0.95em;
+        padding: 10px 20px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -95,20 +118,13 @@
 
   <div class="carta-container">
     <div class="carta">
-     
       <p>
-       Se que estas con las dudas , pero te acuerdas de una de mis filosofias de vida sobre "las oportunidades que se presentan",
-       tú fuiste una oportunidad en mi vida, conocerte fue una oportunidad muy especial, no me gustaria perder esta oportunidad. 
-       Se que tienes miedo a lastimarte , hasta yo , pero te acuerdas cuando yo te dije mis sentimientos, de que no seria todo 
-       color de rosa , pero eso lo hace mas especial , de como  vamos afrontando cada tropiezo, ya podimos superar un tropiezo la anterior
-       vez ,se que podemos este mas.
-       
+       Sé que estás con dudas, pero ¿recuerdas una de mis filosofías sobre "las oportunidades que se presentan"?<br><br>
+       Tú fuiste una oportunidad en mi vida, conocerte fue algo muy especial. No me gustaría perder esta oportunidad.<br><br>
+       Sé que tienes miedo a lastimarte, yo también... Pero cuando te hablé de mis sentimientos, te dije que no todo sería color de rosa. Y eso lo hace más especial: cómo enfrentamos los tropiezos. Ya superamos uno, sé que podemos superar este también.
       </p>
-     
     </div>
   </div>
-
- 
 
 </body>
 </html>
